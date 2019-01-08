@@ -1,4 +1,8 @@
 const colors = {
+  colorPrimary: '#A9CEC9',
+  colorTextPrimary: '#637381',
+
+  // legacy
   background: '#1F0808',
   clear: 'rgba(0,0,0,0)',
   facebook: '#3b5998',
