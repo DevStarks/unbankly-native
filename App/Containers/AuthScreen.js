@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { TextInput, Text, Image, View } from 'react-native'
 import Button from '../Components/Button'
+import { Images } from '../Themes'
 
 // Styles
 import styles from './Styles/AuthScreenStyles'
@@ -19,8 +20,8 @@ export default class AuthScreen extends Component {
       <View style={styles.mainContainer}>
         <View style={styles.title}>
           <Image
-            style={{width: 50, height: 50}}
-            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+            style={{width: 200, height: 55}}
+            source={Images.logo}
           />
           <Text>Helping People.</Text>
         </View>

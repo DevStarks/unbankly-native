@@ -7,6 +7,7 @@ export default StyleSheet.create({
     paddingBottom: Metrics.baseMargin
   },
   title: {
+    marginTop: Metrics.doubleSection,
     height: 10,
     flex: 3,
     flexDirection: 'column',
