@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { TextInput, Text, Image, View } from 'react-native'
+import { TextInput, Image, View } from 'react-native'
 import Button from '../Components/Button'
+import Text from '../Components/AppText'
 import { Images } from '../Themes'
 
 // Styles

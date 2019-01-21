@@ -14,7 +14,7 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   subtitle: {
-    fontFamily: Fonts.type.secondary
+    ...Fonts.style.h3
   },
   form: {
     flex: 4

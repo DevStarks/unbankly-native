@@ -30,7 +30,7 @@ const style = {
     fontSize: size.h2
   },
   h3: {
-    fontFamily: type.emphasis,
+    fontFamily: type.secondary,
     fontSize: size.h3
   },
   h4: {
