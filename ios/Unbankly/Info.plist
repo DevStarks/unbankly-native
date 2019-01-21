@@ -72,6 +72,12 @@
 		<string>Zocial.ttf</string>
 		<string>AmaticSC-Bold.ttf</string>
 		<string>AmaticSC-Regular.ttf</string>
+		<string>Oswald-Bold.ttf</string>
+		<string>Oswald-ExtraLight.ttf</string>
+		<string>Oswald-Light.ttf</string>
+		<string>Oswald-Medium.ttf</string>
+		<string>Oswald-Regular.ttf</string>
+		<string>Oswald-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
