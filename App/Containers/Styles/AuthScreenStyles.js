@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+import { Metrics, Fonts, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
@@ -12,6 +12,9 @@ export default StyleSheet.create({
     flex: 3,
     flexDirection: 'column',
     alignItems: 'center'
+  },
+  subtitle: {
+    fontFamily: Fonts.type.secondary
   },
   form: {
     flex: 4

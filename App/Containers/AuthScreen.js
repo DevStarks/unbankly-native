@@ -23,7 +23,7 @@ export default class AuthScreen extends Component {
             style={{width: 200, height: 55}}
             source={Images.logo}
           />
-          <Text>Helping People.</Text>
+          <Text style={styles.subtitle}>Helping People.</Text>
         </View>
 
         <View style={[styles.section, styles.form]}>
