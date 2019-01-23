@@ -1,5 +1,6 @@
 import { call, put } from 'redux-saga/effects'
 import AuthActions from '../Redux/AuthRedux'
+import { path } from 'ramda'
 
 export function * signupUser (api, action) {
   const { email, password } = action
@@ -7,7 +8,8 @@ export function * signupUser (api, action) {
   const response = yield call(api.signupUser, email, password)
 
   if (response.ok) {
-    const user = response
+    const user = path(['data'], response)[0]
+
     // do data conversion here if needed
     yield put(AuthActions.signupSuccess(user))
   } else {

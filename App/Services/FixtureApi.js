@@ -20,5 +20,11 @@ export default {
       ok: true,
       data: username.toLowerCase() === 'gantman' ? gantmanData : skellockData
     }
+  },
+  signupUser: (email, password) => {
+    return {
+      ok: true,
+      data: {email, password}
+    }
   }
 }
