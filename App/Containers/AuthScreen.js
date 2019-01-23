@@ -3,6 +3,7 @@ import { Image, View } from 'react-native'
 import Button from '../Components/Button'
 import Text from '../Components/AppText'
 import TextInput from '../Components/TextInput'
+import Link from '../Components/Link'
 import { Images } from '../Themes'
 
 // Styles
@@ -42,8 +43,8 @@ export default class AuthScreen extends Component {
             style={styles.button}
             text='SIGN UP' />
           <View style={styles.authLinks}>
-            <Text>Helping People.</Text>
-            <Text>Helping People.</Text>
+            <Link>SIGN IN</Link>
+            <Link>FORGOT YOUR PASSWORD?</Link>
           </View>
         </View>
       </View>
