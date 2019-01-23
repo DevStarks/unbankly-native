@@ -13,9 +13,18 @@ export default class AuthScreen extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      email: 'email',
-      password: 'password'
+      action: 'SIGN IN',
+      email: '',
+      password: ''
     }
+  }
+
+  setAction (action) {
+    return () => this.setState({action})
+  }
+
+  oppositeAction () {
+    return this.state.action === 'SIGN IN' ? 'SIGN UP' : 'SIGN IN'
   }
 
   render () {
@@ -34,16 +43,20 @@ export default class AuthScreen extends Component {
             style={styles.emailInput}
             onChangeText={(text) => this.setState({email: text})}
             value={this.state.email}
+            placeholder='email'
           />
           <TextInput
             onChangeText={(text) => this.setState({password: text})}
             value={this.state.password}
+            placeholder='password'
           />
           <Button
             style={styles.button}
-            text='SIGN UP' />
+            text={this.state.action} />
           <View style={styles.authLinks}>
-            <Link>SIGN IN</Link>
+            <Link onPress={this.setAction(this.oppositeAction())}>
+              {this.oppositeAction()}
+            </Link>
             <Link>FORGOT YOUR PASSWORD?</Link>
           </View>
         </View>
