@@ -1,8 +1,9 @@
 // a library to wrap and simplify api calls
 import apisauce from 'apisauce'
+import Config from 'react-native-config'
 
 // our "constructor"
-const create = (baseURL = 'https://api.github.com/') => {
+const create = (baseURL = Config.API_URL) => {
   // ------
   // STEP 1
   // ------
@@ -38,6 +39,8 @@ const create = (baseURL = 'https://api.github.com/') => {
   const getRate = () => api.get('rate_limit')
   const getUser = (username) => api.get('search/users', {q: username})
 
+  const signupUser = (email, password) => api.get('signup', {email, password})
+
   // ------
   // STEP 3
   // ------
@@ -54,7 +57,8 @@ const create = (baseURL = 'https://api.github.com/') => {
     // a list of the API functions from step 2
     getRoot,
     getRate,
-    getUser
+    getUser,
+    signupUser
   }
 }
 

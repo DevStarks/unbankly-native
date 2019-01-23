@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { Image, View } from 'react-native'
+import { connect } from 'react-redux'
 import Button from '../Components/Button'
 import Text from '../Components/AppText'
 import TextInput from '../Components/TextInput'
 import Link from '../Components/Link'
 import { Images } from '../Themes'
+import AuthActions from '../Redux/AuthRedux'
 
 // Styles
 import styles from './Styles/AuthScreenStyles'
 
-export default class AuthScreen extends Component {
+class AuthScreen extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -23,8 +25,16 @@ export default class AuthScreen extends Component {
     return () => this.setState({action})
   }
 
-  oppositeAction () {
+  oppositeActionText () {
     return this.state.action === 'SIGN IN' ? 'SIGN UP' : 'SIGN IN'
+  }
+
+  authAction () {
+    return this.state.action === 'SIGN IN' ? this.props.signupUser : () => {}
+  }
+
+  invokeAction () {
+    this.authAction(this.state.email, this.state.password)
   }
 
   render () {
@@ -52,10 +62,12 @@ export default class AuthScreen extends Component {
           />
           <Button
             style={styles.button}
-            text={this.state.action} />
+            text={this.state.action}
+            onPress={this.invokeAction.bind(this)}
+          />
           <View style={styles.authLinks}>
-            <Link onPress={this.setAction(this.oppositeAction())}>
-              {this.oppositeAction()}
+            <Link onPress={this.setAction(this.oppositeActionText())}>
+              {this.oppositeActionText()}
             </Link>
             <Link>FORGOT YOUR PASSWORD?</Link>
           </View>
@@ -64,3 +76,9 @@ export default class AuthScreen extends Component {
     )
   }
 }
+
+const mapDispatchToProps = (dispatch) => ({
+  signupUser: () => dispatch(AuthActions.signupUser())
+})
+
+export default connect(null, mapDispatchToProps)(AuthScreen)

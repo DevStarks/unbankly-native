@@ -1,0 +1,16 @@
+import { call, put } from 'redux-saga/effects'
+import AuthActions from '../Redux/AuthRedux'
+
+export function * signupUser (api, action) {
+  const { email, password } = action
+  // make the call to the api
+  const response = yield call(api.signupUser, email, password)
+
+  if (response.ok) {
+    const user = response
+    // do data conversion here if needed
+    yield put(AuthActions.signupSuccess(user))
+  } else {
+    yield put(AuthActions.signupFailure())
+  }
+}
