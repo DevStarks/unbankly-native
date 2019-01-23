@@ -10,6 +10,7 @@ export default StyleSheet.create({
     marginVertical: Metrics.baseMargin,
     color: Colors.textPrimary,
     textAlign: 'center',
-    fontSize: Fonts.size.regular
+    fontSize: Fonts.size.regular,
+    fontFamily: Fonts.type.bold
   }
 })

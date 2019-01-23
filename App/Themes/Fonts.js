@@ -1,6 +1,6 @@
 const type = {
   base: 'Oswald-Regular',
-  bold: 'Avenir-Black',
+  bold: 'Oswald-Bold',
   emphasis: 'HelveticaNeue-Italic',
 
   secondary: 'AmaticSC-Bold'

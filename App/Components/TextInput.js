@@ -13,8 +13,8 @@ ExamplesRegistry.addComponentExample('TextInput', () =>
 class AppTextInput extends Component {
   render () {
     return (
-      <View>
-        <TextInput {...this.props} style={[styles.textInput, this.props.style]}>
+      <View style={this.props.style}>
+        <TextInput {...this.props} style={styles.textInput}>
           {this.props.children}
         </TextInput>
         <View style={styles.textInputUnderline} />

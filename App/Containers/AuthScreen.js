@@ -22,7 +22,7 @@ export default class AuthScreen extends Component {
       <View style={styles.mainContainer}>
         <View style={styles.title}>
           <Image
-            style={{width: 200, height: 55}}
+            style={styles.logo}
             source={Images.logo}
           />
           <Text style={styles.subtitle}>Helping People.</Text>
@@ -30,21 +30,21 @@ export default class AuthScreen extends Component {
 
         <View style={[styles.section, styles.form]}>
           <TextInput
-            onChangeText={(text) => this.setState({text})}
+            style={styles.emailInput}
+            onChangeText={(text) => this.setState({email: text})}
             value={this.state.email}
           />
           <TextInput
-            onChangeText={(text) => this.setState({text})}
+            onChangeText={(text) => this.setState({password: text})}
             value={this.state.password}
           />
-          <Button text='SIGN UP' />
-        </View>
-
-        <View style={[styles.section, styles.bottomNav]}>
-
-          <Text>Helping People.</Text>
-          <Text>Helping People.</Text>
-
+          <Button
+            style={styles.button}
+            text='SIGN UP' />
+          <View style={styles.authLinks}>
+            <Text>Helping People.</Text>
+            <Text>Helping People.</Text>
+          </View>
         </View>
       </View>
     )

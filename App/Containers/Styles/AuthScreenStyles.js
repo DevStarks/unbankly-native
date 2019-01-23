@@ -9,7 +9,7 @@ export default StyleSheet.create({
   title: {
     marginTop: Metrics.doubleSection,
     height: 10,
-    flex: 3,
+    flex: 1,
     flexDirection: 'column',
     alignItems: 'center'
   },
@@ -17,20 +17,24 @@ export default StyleSheet.create({
     ...Fonts.style.h3
   },
   form: {
-    flex: 4
+    flex: 3
   },
-  bottomNav: {
-    flex: 1,
+  authLinks: {
+    paddingTop: Metrics.baseMargin,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
   logo: {
-    marginTop: Metrics.doubleSection,
-    height: Metrics.images.logo,
-    width: Metrics.images.logo,
-    resizeMode: 'contain'
+    width: 200,
+    height: 55
   },
   centered: {
     alignItems: 'center'
+  },
+  emailInput: {
+    marginBottom: Metrics.baseMargin
+  },
+  button: {
+    marginTop: Metrics.baseMargin
   }
 })

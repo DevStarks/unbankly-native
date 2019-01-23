@@ -15,9 +15,12 @@ export default StyleSheet.create({
   },
   textInputUnderline: {
     backgroundColor: Colors.secondary,
-    height: 2,
-    bottom: 5,
+    height: 1,
+    bottom: 4,
     left: 1,
     width: 291
+  },
+  inputWrap: {
+    height: Metrics.inputHeight
   }
 })
