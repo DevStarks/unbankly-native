@@ -1,6 +1,8 @@
 const colors = {
-  colorPrimary: '#A9CEC9',
-  colorTextPrimary: '#637381',
+  primary: '#A9CEC9',
+  secondary: '#ECC925',
+  textPrimary: '#637381',
+  border: '#E7E7E7',
 
   // legacy
   background: '#1F0808',
@@ -23,7 +25,6 @@ const colors = {
   fire: '#e73536',
   drawer: 'rgba(30, 30, 29, 0.95)',
   eggplant: '#251a34',
-  border: '#483F53',
   banner: '#5F3E63',
   text: '#E0D7E5'
 }

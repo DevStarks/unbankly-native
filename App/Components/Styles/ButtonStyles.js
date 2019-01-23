@@ -3,12 +3,12 @@ import { Colors, Fonts, Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   button: {
-    backgroundColor: Colors.colorPrimary
+    backgroundColor: Colors.primary
   },
 
   buttonText: {
     marginVertical: Metrics.baseMargin,
-    color: Colors.colorTextPrimary,
+    color: Colors.textPrimary,
     textAlign: 'center',
     fontSize: Fonts.size.regular
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { TextInput, Image, View } from 'react-native'
+import { Image, View } from 'react-native'
 import Button from '../Components/Button'
 import Text from '../Components/AppText'
+import TextInput from '../Components/TextInput'
 import { Images } from '../Themes'
 
 // Styles
@@ -11,7 +12,7 @@ export default class AuthScreen extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      username: 'username',
+      email: 'email',
       password: 'password'
     }
   }
@@ -29,12 +30,10 @@ export default class AuthScreen extends Component {
 
         <View style={[styles.section, styles.form]}>
           <TextInput
-            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
             onChangeText={(text) => this.setState({text})}
-            value={this.state.username}
+            value={this.state.email}
           />
           <TextInput
-            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
             onChangeText={(text) => this.setState({text})}
             value={this.state.password}
           />
