@@ -29,8 +29,8 @@ class AuthScreen extends Component {
     return this.state.action === 'SIGN IN' ? 'SIGN UP' : 'SIGN IN'
   }
 
-  authAction () {
-    return this.state.action === 'SIGN IN' ? this.props.signupUser : () => {}
+  authAction (...args) {
+    return this.state.action === 'SIGN UP' ? this.props.signupRequest(...args) : () => {}
   }
 
   invokeAction () {
@@ -77,8 +77,9 @@ class AuthScreen extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  signupUser: () => dispatch(AuthActions.signupUser())
-})
+// const mapDispatchToProps = (dispatch) => ({
+//   signupRequest: (...args) => dispatch(signupRequest(args))
+// })
+const { signupRequest } = AuthActions
 
-export default connect(null, mapDispatchToProps)(AuthScreen)
+export default connect(null, { signupRequest: AuthActions.signupRequest })(AuthScreen)

@@ -21,6 +21,10 @@ const create = (baseURL = Config.API_URL) => {
     timeout: 10000
   })
 
+  // add logging
+  // const naviMonitor = response => console.log('hey!  listen! ', response)
+  api.addMonitor(console.log)
+
   // ------
   // STEP 2
   // ------
@@ -39,7 +43,7 @@ const create = (baseURL = Config.API_URL) => {
   const getRate = () => api.get('rate_limit')
   const getUser = (username) => api.get('search/users', {q: username})
 
-  const signupUser = (email, password) => api.post('signup', {email, password})
+  const signupUser = (email, password) => api.post('users', {registration: {email, password}})
 
   // ------
   // STEP 3
