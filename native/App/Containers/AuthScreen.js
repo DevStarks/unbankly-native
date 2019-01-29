@@ -15,7 +15,7 @@ class AuthScreen extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      action: 'SIGN IN',
+      action: 'SIGN UP',
       email: '',
       password: ''
     }

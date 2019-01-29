@@ -39,7 +39,7 @@ const create = (baseURL = Config.API_URL) => {
   const getRate = () => api.get('rate_limit')
   const getUser = (username) => api.get('search/users', {q: username})
 
-  const signupUser = (email, password) => api.get('signup', {email, password})
+  const signupUser = (email, password) => api.post('signup', {email, password})
 
   // ------
   // STEP 3
