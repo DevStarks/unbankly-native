@@ -59,6 +59,7 @@ class AuthScreen extends Component {
             onChangeText={(text) => this.setState({password: text})}
             value={this.state.password}
             placeholder='password'
+            secureTextEntry
           />
           <Button
             style={styles.button}
