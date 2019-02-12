@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 import { persistReducer } from 'redux-persist'
+import { reduxTokenAuthReducer } from 'redux-token-auth'
 import configureStore from './CreateStore'
 import rootSaga from '../Sagas/'
 import ReduxPersist from '../Config/ReduxPersist'
@@ -9,7 +10,8 @@ export const reducers = combineReducers({
   nav: require('./NavigationRedux').reducer,
   auth: require('./AuthRedux').reducer,
   github: require('./GithubRedux').reducer,
-  search: require('./SearchRedux').reducer
+  search: require('./SearchRedux').reducer,
+  reduxTokenAuth: reduxTokenAuthReducer
 })
 
 export default () => {
