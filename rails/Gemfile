@@ -33,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'omniauth'
 gem 'devise'
-gem 'devise-jwt', '~> 0.5.8'
 
 
 # Reduces boot times through caching; required in config/boot.rb
