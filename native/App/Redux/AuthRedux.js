@@ -4,6 +4,7 @@ import Immutable from 'seamless-immutable'
 /* ------------- Types and Action Creators ------------- */
 
 const { Types, Creators } = createActions({
+  receiveTokenHeaders: ['headers'],
   signupRequest: ['email', 'password'],
   signupSuccess: ['user'],
   signupFailure: null
@@ -18,7 +19,8 @@ export const INITIAL_STATE = Immutable({
   user: null,
   email: null,
   fetching: null,
-  error: null
+  error: null,
+  tokenHeaders: null
 })
 
 /* ------------- Selectors ------------- */
@@ -28,6 +30,8 @@ export const INITIAL_STATE = Immutable({
 // }
 
 /* ------------- Reducers ------------- */
+export const receiveHeaders = (state, { headers }) =>
+  state.merge({ headers })
 
 // request the user
 export const request = (state, { email }) =>
@@ -46,6 +50,7 @@ export const failure = (state) =>
 /* ------------- Hookup Reducers To Types ------------- */
 
 export const reducer = createReducer(INITIAL_STATE, {
+  [Types.RECEIVE_TOKEN_HEADERS]: receiveHeaders,
   [Types.SIGNUP_REQUEST]: request,
   [Types.SIGNUP_SUCCESS]: success,
   [Types.SIGNUP_FAILURE]: failure

@@ -1,6 +1,8 @@
 // a library to wrap and simplify api calls
 import apisauce from 'apisauce'
 import Config from 'react-native-config'
+import AuthActions from '../Redux/AuthRedux'
+import { store } from '../Containers/App'
 
 // our "constructor"
 const create = (baseURL = Config.API_URL) => {
@@ -24,6 +26,26 @@ const create = (baseURL = Config.API_URL) => {
   // add logging
   // const naviMonitor = response => console.log('hey!  listen! ', response)
   api.addMonitor(console.log)
+
+  // receive token headers
+  api.addMonitor(({headers}) => {
+    debugger
+    store.dispatch(AuthActions.receiveTokenHeaders(headers))
+  })
+
+  // add headers to requests
+  api.addRequestTransform(({headers}) => {
+    // const asdf = store
+    debugger
+    const savedHeaders = store.getState().auth.headers
+    if (savedHeaders) {
+      headers['access-token'] = savedHeaders['access-token']
+      headers['token-type'] = savedHeaders['token-type']
+      headers['client'] = savedHeaders['client']
+      headers['expiry'] = savedHeaders['expiry']
+      headers['uid'] = savedHeaders['uid']
+    }
+  })
 
   // ------
   // STEP 2
