@@ -5,11 +5,9 @@ describe 'sessions' do
     it 'works' do
       user_count = User.count
 
-      post '/users', params: {
-        user: {
-          email: 'test@gmail.com',
-          password: 'password'
-        }
+      post '/api/v1/auth', params: {
+        email: 'test@gmail.com',
+        password: 'password'
       }
 
       expect(User.count).to eq(user_count + 1)
