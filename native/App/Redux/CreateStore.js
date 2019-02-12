@@ -1,4 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
 import Rehydration from '../Services/Rehydration'
 import ReduxPersist from '../Config/ReduxPersist'
 import { composeWithDevTools } from 'remote-redux-devtools'
@@ -30,6 +31,8 @@ export default (rootReducer, rootSaga) => {
   const sagaMiddleware = createSagaMiddleware({ sagaMonitor })
   middleware.push(sagaMiddleware)
 
+  /* ------------- Thunk Middleware ------------- */
+  middleware.push(thunk)
   /* ------------- Assemble Middleware ------------- */
 
   enhancers.push(applyMiddleware(...middleware))
