@@ -33,7 +33,7 @@ export const INITIAL_STATE = Immutable({
 export const request = (state, { email }) =>
   state.merge({ fetching: true, email, user: null })
 
-// successful user lookup
+// successful user signup
 export const success = (state, action) => {
   const { user } = action
   return state.merge({ fetching: false, error: null, user })

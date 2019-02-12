@@ -21,6 +21,12 @@ class AuthScreen extends Component {
     }
   }
 
+  componentDidUpdate () {
+    if (this.props.user) {
+      this.props.navigation.navigate('loans')
+    }
+  }
+
   setAction (action) {
     return () => this.setState({action})
   }
@@ -30,7 +36,9 @@ class AuthScreen extends Component {
   }
 
   authAction (...args) {
-    return this.state.action === 'SIGN UP' ? this.props.signupRequest(...args) : () => {}
+    return this.state.action === 'SIGN UP'
+      ? this.props.signupRequest(...args)
+      : () => {}
   }
 
   invokeAction () {
@@ -78,9 +86,10 @@ class AuthScreen extends Component {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => ({
-//   signupRequest: (...args) => dispatch(signupRequest(args))
-// })
-const { signupRequest } = AuthActions
+const mapStateToProps = state => {
+  return {
+    user: state.auth.user
+  }
+}
 
-export default connect(null, { signupRequest: AuthActions.signupRequest })(AuthScreen)
+export default connect(mapStateToProps, { signupRequest: AuthActions.signupRequest })(AuthScreen)
