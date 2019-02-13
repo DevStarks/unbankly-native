@@ -29,14 +29,11 @@ const create = (baseURL = Config.API_URL) => {
 
   // receive token headers
   api.addMonitor(({headers}) => {
-    debugger
     store.dispatch(AuthActions.receiveTokenHeaders(headers))
   })
 
   // add headers to requests
   api.addRequestTransform(({headers}) => {
-    // const asdf = store
-    debugger
     const savedHeaders = store.getState().auth.headers
     if (savedHeaders) {
       headers['access-token'] = savedHeaders['access-token']

@@ -8,9 +8,7 @@ export function * signupUser (api, action) {
   const response = yield call(api.signupUser, email, password)
 
   if (response.ok) {
-    const user = path(['data'], response)
-
-    // do data conversion here if needed
+    const user = path(['data', 'data'], response)
     yield put(AuthActions.signupSuccess(user))
   } else {
     yield put(AuthActions.signupFailure())

@@ -4724,10 +4724,6 @@ ignite-redux-persist@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ignite-redux-persist/-/ignite-redux-persist-1.1.1.tgz#449c48d6aad25063fba21bc830176e3b5a7b10bd"
 
-ignite-redux-thunk@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ignite-redux-thunk/-/ignite-redux-thunk-0.0.1.tgz#deb0b4cef25118f3dcf3531d2b57ce8aace3c86d"
-
 ignite-standard@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ignite-standard/-/ignite-standard-1.0.0.tgz#76ad70395d3e8a382dcf1395761e1ae19b6d0849"
@@ -8274,10 +8270,6 @@ redux-persist@^5.4.0:
 redux-saga@^0.16.0, redux-saga@^0.16.1:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
-
-redux-thunk@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
 
 redux@^3.7.1:
   version "3.7.2"
