@@ -27,16 +27,15 @@ exports[`Storyshots AlertMessage Custom Style 1`] = `
       style={
         Object {
           "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Oswald-Regular",
           "fontSize": 17,
           "fontWeight": "bold",
-          "marginHorizontal": 10,
-          "marginTop": 10,
+          "marginHorizontal": 16,
+          "marginTop": 16,
           "textAlign": "center",
         }
       }
     >
-      lkj
       ALERT ALERT
     </Text>
   </View>
@@ -68,16 +67,15 @@ exports[`Storyshots AlertMessage Default 1`] = `
       style={
         Object {
           "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Oswald-Regular",
           "fontSize": 17,
           "fontWeight": "bold",
-          "marginHorizontal": 10,
-          "marginTop": 10,
+          "marginHorizontal": 16,
+          "marginTop": 16,
           "textAlign": "center",
         }
       }
     >
-      lkj
       ALERT ALERT
     </Text>
   </View>
@@ -113,9 +111,9 @@ exports[`Storyshots DrawerButton Default 1`] = `
       style={
         Object {
           "color": "white",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Oswald-Regular",
           "fontSize": 20,
-          "marginVertical": 10,
+          "marginVertical": 16,
         }
       }
     >
@@ -151,7 +149,7 @@ exports[`Storyshots FullButton Custom Style 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Black",
+        "fontFamily": "Oswald-Bold",
         "fontSize": 14,
         "margin": 18,
         "textAlign": "center",
@@ -189,7 +187,7 @@ exports[`Storyshots FullButton Default 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Black",
+        "fontFamily": "Oswald-Bold",
         "fontSize": 14,
         "margin": 18,
         "textAlign": "center",
@@ -218,7 +216,7 @@ exports[`Storyshots RoundedButton Default 1`] = `
       "height": 45,
       "justifyContent": "center",
       "marginHorizontal": 25,
-      "marginVertical": 10,
+      "marginVertical": 16,
       "opacity": 1,
     }
   }
@@ -229,7 +227,7 @@ exports[`Storyshots RoundedButton Default 1`] = `
         "color": "white",
         "fontSize": 14,
         "fontWeight": "bold",
-        "marginVertical": 10,
+        "marginVertical": 16,
         "textAlign": "center",
       }
     }
@@ -256,7 +254,7 @@ exports[`Storyshots RoundedButton Text as children 1`] = `
       "height": 45,
       "justifyContent": "center",
       "marginHorizontal": 25,
-      "marginVertical": 10,
+      "marginVertical": 16,
       "opacity": 1,
     }
   }
@@ -267,7 +265,7 @@ exports[`Storyshots RoundedButton Text as children 1`] = `
         "color": "white",
         "fontSize": 14,
         "fontWeight": "bold",
-        "marginVertical": 10,
+        "marginVertical": 16,
         "textAlign": "center",
       }
     }

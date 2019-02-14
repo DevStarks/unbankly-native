@@ -6,8 +6,8 @@ import RootContainer from './RootContainer'
 import createStore from '../Redux'
 
 // create our store
-// change this
-export const store = createStore()
+const store = createStore()
+global.store = store
 
 /**
  * Provides an entry point into our application.  Both index.ios.js and index.android.js

@@ -2,7 +2,6 @@
 import apisauce from 'apisauce'
 import Config from 'react-native-config'
 import AuthActions from '../Redux/AuthRedux'
-import { store } from '../Containers/App'
 
 // our "constructor"
 const create = (baseURL = Config.API_URL) => {
@@ -29,12 +28,12 @@ const create = (baseURL = Config.API_URL) => {
 
   // receive token headers
   api.addMonitor(({headers}) => {
-    store.dispatch(AuthActions.receiveTokenHeaders(headers))
+    global.store.dispatch(AuthActions.receiveTokenHeaders(headers))
   })
 
   // add headers to requests
   api.addRequestTransform(({headers}) => {
-    const savedHeaders = store.getState().auth.headers
+    const savedHeaders = global.store.getState().auth.headers
     if (savedHeaders) {
       headers['access-token'] = savedHeaders['access-token']
       headers['token-type'] = savedHeaders['token-type']

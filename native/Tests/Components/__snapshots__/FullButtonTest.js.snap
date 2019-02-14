@@ -26,7 +26,7 @@ exports[`FullButton component renders correctly 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Black",
+        "fontFamily": "Oswald-Bold",
         "fontSize": 14,
         "margin": 18,
         "textAlign": "center",
