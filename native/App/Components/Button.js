@@ -9,7 +9,7 @@ import ExamplesRegistry from '../Services/ExamplesRegistry'
 ExamplesRegistry.addComponentExample('Drawer Button', () =>
   <Button
     text='Example left drawer button'
-    onPress={() => window.alert('Your drawers are showing')}
+    onPress={() => window.alert('Your button was pressed')}
   />
 )
 
