@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { TextInput, View } from 'react-native'
 import styles from './Styles/TextInputStyles'
 import ExamplesRegistry from '../Services/ExamplesRegistry'
@@ -11,6 +12,10 @@ ExamplesRegistry.addComponentExample('TextInput', () =>
 )
 
 class AppTextInput extends Component {
+  static propTypes = {
+    onChangeText: PropTypes.func.isRequired
+  }
+
   render () {
     return (
       <View style={this.props.style}>

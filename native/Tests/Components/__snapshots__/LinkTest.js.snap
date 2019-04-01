@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link component renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "color": "#637381",
+      "fontFamily": "AmaticSC-Bold",
+      "fontSize": 17,
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#637381",
+        "fontFamily": "AmaticSC-Bold",
+        "fontSize": 17,
+      }
+    }
+  >
+    This is a link
+  </Text>
+</View>
+`;

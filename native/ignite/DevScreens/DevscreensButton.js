@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Modal } from 'react-native'
 import DebugConfig from '../../App/Config/DebugConfig'
-import RoundedButton from '../../App/Components/RoundedButton'
+import Button from '../../App/Components/Button'
 import PresentationScreen from './PresentationScreen'
 
 export default class DevscreensButton extends React.Component {
@@ -20,9 +20,9 @@ export default class DevscreensButton extends React.Component {
     if (DebugConfig.showDevScreens) {
       return (
         <View>
-          <RoundedButton onPress={this.toggleModal}>
+          <Button onPress={this.toggleModal}>
             Open DevScreens
-          </RoundedButton>
+          </Button>
           <Modal
             visible={this.state.showModal}
             onRequestClose={this.toggleModal}>

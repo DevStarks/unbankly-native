@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppText component renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#637381",
+        "fontFamily": "Oswald-Regular",
+      },
+      undefined,
+    ]
+  }
+>
+  This is text
+</Text>
+`;

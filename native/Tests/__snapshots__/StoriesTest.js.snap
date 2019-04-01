@@ -84,7 +84,7 @@ exports[`Storyshots AlertMessage Default 1`] = `
 
 exports[`Storyshots AlertMessage Hidden 1`] = `null`;
 
-exports[`Storyshots DrawerButton Default 1`] = `
+exports[`Storyshots Button Default 1`] = `
 <View
   style={
     Object {
@@ -103,6 +103,7 @@ exports[`Storyshots DrawerButton Default 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "backgroundColor": "#A9CEC9",
         "opacity": 1,
       }
     }
@@ -110,167 +111,16 @@ exports[`Storyshots DrawerButton Default 1`] = `
     <Text
       style={
         Object {
-          "color": "white",
-          "fontFamily": "Oswald-Regular",
-          "fontSize": 20,
+          "color": "#637381",
+          "fontFamily": "Oswald-Bold",
+          "fontSize": 17,
           "marginVertical": 16,
+          "textAlign": "center",
         }
       }
     >
       Drawer Button
     </Text>
   </View>
-</View>
-`;
-
-exports[`Storyshots FullButton Custom Style 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "borderBottomColor": "#fb5f26",
-      "borderBottomWidth": 1,
-      "borderTopColor": "#e73536",
-      "borderTopWidth": 1,
-      "marginVertical": 5,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "white",
-        "fontFamily": "Oswald-Bold",
-        "fontSize": 14,
-        "margin": 18,
-        "textAlign": "center",
-      }
-    }
-  >
-    STYLE ME UP!
-  </Text>
-</View>
-`;
-
-exports[`Storyshots FullButton Default 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "rgba(164, 0, 48, 0.5)",
-      "borderBottomColor": "#fb5f26",
-      "borderBottomWidth": 1,
-      "borderTopColor": "#e73536",
-      "borderTopWidth": 1,
-      "marginVertical": 5,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "white",
-        "fontFamily": "Oswald-Bold",
-        "fontSize": 14,
-        "margin": 18,
-        "textAlign": "center",
-      }
-    }
-  >
-    A SIMPLE BUTTON
-  </Text>
-</View>
-`;
-
-exports[`Storyshots RoundedButton Default 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "#e73536",
-      "borderRadius": 5,
-      "height": 45,
-      "justifyContent": "center",
-      "marginHorizontal": 25,
-      "marginVertical": 16,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 14,
-        "fontWeight": "bold",
-        "marginVertical": 16,
-        "textAlign": "center",
-      }
-    }
-  >
-    A SIMPLE ROUNDED BUTTON
-  </Text>
-</View>
-`;
-
-exports[`Storyshots RoundedButton Text as children 1`] = `
-<View
-  accessible={true}
-  isTVSelectable={true}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "backgroundColor": "#e73536",
-      "borderRadius": 5,
-      "height": 45,
-      "justifyContent": "center",
-      "marginHorizontal": 25,
-      "marginVertical": 16,
-      "opacity": 1,
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 14,
-        "fontWeight": "bold",
-        "marginVertical": 16,
-        "textAlign": "center",
-      }
-    }
-  >
-    HELLO FROM THE CHILDREN!
-  </Text>
 </View>
 `;

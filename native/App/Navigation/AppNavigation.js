@@ -8,8 +8,8 @@ import styles from './Styles/NavigationStyles'
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
   LaunchScreen: { screen: LaunchScreen },
-  AuthScreen: { screen: AuthScreen }
-  // LoanScreen: { screen: LoanScreen }
+  AuthScreen: { screen: AuthScreen },
+  LoanScreen: { screen: LoanScreen }
 }, {
   // Default config for all screens
   headerMode: 'none',

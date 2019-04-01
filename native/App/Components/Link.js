@@ -14,8 +14,8 @@ ExamplesRegistry.addComponentExample('Link', () =>
 
 class Link extends Component {
   static propTypes = {
-    onPress: PropTypes.func,
-    children: PropTypes.string
+    onPress: PropTypes.func.isRequired,
+    children: PropTypes.string.isRequired
   }
 
   render () {

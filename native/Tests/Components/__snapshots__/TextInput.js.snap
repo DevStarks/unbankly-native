@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput component renders correctly 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    style={
+      Object {
+        "borderColor": "#E7E7E7",
+        "borderWidth": 1,
+        "color": "#637381",
+        "fontFamily": "AmaticSC-Bold",
+        "fontSize": 20,
+        "height": 60,
+        "paddingBottom": 16,
+        "paddingLeft": 5,
+        "paddingTop": 16,
+      }
+    }
+    text="hi"
+    underlineColorAndroid="transparent"
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ECC925",
+        "bottom": 4,
+        "height": 1,
+        "left": 1,
+        "width": 291,
+      }
+    }
+  />
+</View>
+`;

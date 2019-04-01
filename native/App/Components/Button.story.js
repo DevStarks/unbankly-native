@@ -2,12 +2,12 @@ import React from 'react'
 import { View } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
 
-import DrawerButton from './DrawerButton'
+import Button from './Button'
 
-storiesOf('DrawerButton')
+storiesOf('Button')
   .add('Default', () => (
     <View style={{ backgroundColor: 'black' }}>
-      <DrawerButton
+      <Button
         text='Drawer Button'
         onPress={() => { }}
       />
