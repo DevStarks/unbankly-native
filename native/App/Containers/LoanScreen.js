@@ -11,14 +11,14 @@ import Text from '../Components/AppText'
 import styles from './Styles/LoanScreenStyles'
 
 class LoanScreen extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      // action: 'SIGN UP',
-      // email: '',
-      // password: ''
-    }
-  }
+  // constructor (props) {
+  //   super(props)
+  //   this.state = {
+  //     // action: 'SIGN UP',
+  //     // email: '',
+  //     // password: ''
+  //   }
+  // }
 
   componentDidMount () {
     if (_.isEmpty(this.props.loans)) {

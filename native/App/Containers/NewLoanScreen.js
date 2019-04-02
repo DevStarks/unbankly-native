@@ -13,8 +13,6 @@ import styles from './Styles/NewLoanScreenStyles'
 class NewLoanScreen extends Component {
   get allRouteMappings () {
     return {
-      totalSteps: 6,
-
       RoleScreen: {
         stepNumber: 1,
         renderer: this.renderRoleForm,
@@ -28,10 +26,6 @@ class NewLoanScreen extends Component {
     return this.allRouteMappings[navigation.state.routeName]
   }
 
-  componentDidMount () {
-
-  }
-
   navigateToNext () {
     this.props.navigation.navigate(this.mappings.nextRoute)
   }
@@ -39,7 +33,7 @@ class NewLoanScreen extends Component {
   renderRoleForm () {
     return (
       <View>
-        <Text>Are you the borrower or lender?</Text>
+        <Text style={styles.question}>Are you the borrower or lender?</Text>
       </View>
     )
   }
@@ -56,11 +50,12 @@ class NewLoanScreen extends Component {
           source={Images.logoThumb}
           />
 
-        <Text>New Loan Setup: Step {`${this.mappings.stepNumber} of ${this.mappings.totalSteps}`}</Text>
+        <Text style={styles.title}>New Loan Setup: Step {`${this.mappings.stepNumber} of ${Object.keys(this.allRouteMappings).length}`}</Text>
 
         <Image
           style={styles.squirrel}
           source={Images.squirrel}
+          resizeMode='cover'
           />
 
         {this.renderContent()}

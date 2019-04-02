@@ -1,5 +1,5 @@
 const type = {
-  base: 'Oswald-Regular',
+  base: 'Oswald-Light',
   bold: 'Oswald-Bold',
   emphasis: 'HelveticaNeue-Italic',
 
@@ -14,7 +14,7 @@ const size = {
   h5: 20,
   h6: 19,
   input: 20,
-  regular: 17,
+  regular: 20,
   medium: 14,
   small: 12,
   tiny: 8.5

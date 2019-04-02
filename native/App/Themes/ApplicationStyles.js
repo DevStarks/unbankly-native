@@ -9,7 +9,14 @@ const ApplicationStyles = {
   screen: {
     mainContainer: {
       flex: 1,
-      backgroundColor: Colors.transparent
+      backgroundColor: Colors.transparent,
+      padding: Metrics.mediumMargin,
+      paddingTop: Metrics.doubleSection
+    },
+    logoThumb: {
+      position: 'absolute',
+      top: Metrics.doubleSection,
+      left: Metrics.mediumMargin
     },
     backgroundImage: {
       position: 'absolute',
