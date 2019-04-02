@@ -12,6 +12,9 @@ ExamplesRegistry.addComponentExample('TextInput', () =>
 )
 
 class AppTextInput extends Component {
+  // For a complete list of props
+  // https://facebook.github.io/react-native/docs/textinput.html#props
+
   static propTypes = {
     onChangeText: PropTypes.func.isRequired
   }

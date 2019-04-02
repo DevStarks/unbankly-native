@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Images } from '../Themes'
 
 import Text from '../Components/AppText'
-// import TextInput from '../Components/TextInput'
+import BoxInput from '../Components/BoxInput'
 import Button from '../Components/Button'
 
 // Styles
@@ -34,6 +34,8 @@ class NewLoanScreen extends Component {
     return (
       <View>
         <Text style={styles.question}>Are you the borrower or lender?</Text>
+
+        <BoxInput></BoxInput>
       </View>
     )
   }
