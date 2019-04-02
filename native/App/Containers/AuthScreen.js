@@ -23,7 +23,7 @@ class AuthScreen extends Component {
 
   componentDidUpdate () {
     if (this.props.user) {
-      this.props.navigation.navigate('LoansScreen')
+      this.props.navigation.navigate('LoanScreen')
     }
   }
 
@@ -78,7 +78,7 @@ class AuthScreen extends Component {
             <Link onPress={this.setAction(this.oppositeActionText())}>
               {this.oppositeActionText()}
             </Link>
-            <Link>FORGOT YOUR PASSWORD?</Link>
+            <Link onPress={() => {}}>FORGOT YOUR PASSWORD?</Link>
           </View>
         </View>
       </View>
