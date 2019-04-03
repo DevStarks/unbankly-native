@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react-native'
 
 import AlertMessage from './AlertMessage'
 
-storiesOf('AlertMessage')
+storiesOf('AlertMessage', module)
   .add('Default', () => (
     <AlertMessage
       title='ALERT ALERT'

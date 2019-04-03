@@ -1,8 +1,10 @@
 const colors = {
   primary: '#A9CEC9',
   secondary: '#ECC925',
+  tertiary: '#F2EFEB',
   textPrimary: '#637381',
   border: '#E7E7E7',
+  darkBorder: '#404041',
 
   // legacy
   background: '#1F0808',

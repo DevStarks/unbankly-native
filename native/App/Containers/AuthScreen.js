@@ -23,7 +23,7 @@ class AuthScreen extends Component {
 
   componentDidUpdate () {
     if (this.props.user) {
-      this.props.navigation.navigate('LoanScreen')
+      // this.props.navigation.navigate('LoanScreen')
     }
   }
 

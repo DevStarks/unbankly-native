@@ -11,17 +11,25 @@ export default StyleSheet.create({
     fontSize: Fonts.size.regular,
     textAlign: 'center',
     marginBottom: Metrics.baseMargin
-    // flex: 1
   },
   logoThumb: {
     ...ApplicationStyles.screen.logoThumb
   },
-
-  squirrel: {
-
-  },
   question: {
-
+    textAlign: 'center',
     margin: Metrics.baseMargin
+  },
+  form: {
+    width: '100%'
+  },
+  navigation: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  button: {
+    // paddingVertical: Metrics.baseMargin,
+    // paddingHorizontal: Metrics.doubleBaseMargin
+    width: '35%'
   }
 })

@@ -6,7 +6,8 @@ exports[`AppText component renders correctly 1`] = `
     Array [
       Object {
         "color": "#637381",
-        "fontFamily": "Oswald-Regular",
+        "fontFamily": "Oswald-Light",
+        "fontSize": 20,
       },
       undefined,
     ]

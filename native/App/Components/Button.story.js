@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native'
 
 import Button from './Button'
 
-storiesOf('Button')
+storiesOf('Button', module)
   .add('Default', () => (
     <View style={{ backgroundColor: 'black' }}>
       <Button

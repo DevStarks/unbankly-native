@@ -21,7 +21,7 @@ class AppTextInput extends Component {
 
   render () {
     return (
-      <View style={this.props.style}>
+      <View style={[this.props.style, styles.inputWrap]}>
         <TextInput {...this.props} style={styles.textInput}>
           {this.props.children}
         </TextInput>

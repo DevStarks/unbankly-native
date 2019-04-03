@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Images } from '../Themes'
 
 import Text from '../Components/AppText'
-import BoxInput from '../Components/BoxInput'
+import ButtonInput from '../Components/ButtonInput'
 import Button from '../Components/Button'
 
 // Styles
@@ -31,11 +31,17 @@ class NewLoanScreen extends Component {
   }
 
   renderRoleForm () {
+    const onSelect = () => {}
+    const roleOptions = [
+      { id: 'borrower', name: 'borrower' },
+      { id: 'lender', name: 'lender' }
+    ]
+
     return (
-      <View>
+      <View style={styles.form}>
         <Text style={styles.question}>Are you the borrower or lender?</Text>
 
-        <BoxInput></BoxInput>
+        <ButtonInput onSelect={onSelect} options={roleOptions} />
       </View>
     )
   }
@@ -54,17 +60,13 @@ class NewLoanScreen extends Component {
 
         <Text style={styles.title}>New Loan Setup: Step {`${this.mappings.stepNumber} of ${Object.keys(this.allRouteMappings).length}`}</Text>
 
-        <Image
-          style={styles.squirrel}
-          source={Images.squirrel}
-          resizeMode='cover'
-          />
+        <Image source={Images.squirrel} resizeMode='cover' />
 
         {this.renderContent()}
 
         <View style={styles.navigation}>
-          <Button onPress={this.props.navigation.goBack}>Back</Button>
-          <Button onPress={this.navigateToNext}>Next</Button>
+          <Button style={styles.button} onPress={this.props.navigation.goBack} text='Back' />
+          <Button style={styles.button} onPress={this.navigateToNext} text='Next' />
         </View>
       </View>
     )

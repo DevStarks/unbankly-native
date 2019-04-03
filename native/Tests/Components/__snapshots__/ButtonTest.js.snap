@@ -22,7 +22,7 @@ exports[`Button component renders correctly 1`] = `
       Object {
         "color": "#637381",
         "fontFamily": "Oswald-Bold",
-        "fontSize": 17,
+        "fontSize": 20,
         "marginVertical": 16,
         "textAlign": "center",
       }

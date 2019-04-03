@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonInput component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F2EFEB",
+        "borderColor": "#F2EFEB",
+        "borderWidth": 1,
+        "flex": 1,
+        "marginHorizontal": 1,
+        "opacity": 1,
+        "paddingHorizontal": 32,
+        "paddingVertical": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#637381",
+            "fontFamily": "Oswald-Light",
+            "fontSize": 20,
+          },
+          Object {
+            "color": "#637381",
+            "fontFamily": "Oswald-Bold",
+            "fontSize": 20,
+            "textAlign": "center",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Option 1
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#F2EFEB",
+        "borderColor": "#F2EFEB",
+        "borderWidth": 1,
+        "flex": 1,
+        "marginHorizontal": 1,
+        "opacity": 1,
+        "paddingHorizontal": 32,
+        "paddingVertical": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#637381",
+            "fontFamily": "Oswald-Light",
+            "fontSize": 20,
+          },
+          Object {
+            "color": "#637381",
+            "fontFamily": "Oswald-Bold",
+            "fontSize": 20,
+            "textAlign": "center",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+    >
+      Option 2
+    </Text>
+  </View>
+</View>
+`;

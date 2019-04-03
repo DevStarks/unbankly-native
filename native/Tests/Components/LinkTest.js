@@ -10,12 +10,11 @@ test('Link component renders correctly', () => {
 })
 
 test('onPress', () => {
-  let i = 0 // i guess i could have used sinon here too... less is more i guess
+  let i = 0
   const onPress = () => i++
-  const wrapperPress = shallow(<Link onPress={onPress}>Link</Link>)
+  const wrapper = shallow(<Link onPress={onPress}>Link</Link>)
 
-  expect(wrapperPress.prop('onPress')).toBe(onPress) // uses the right handler
   expect(i).toBe(0)
-  wrapperPress.simulate('press')
+  wrapper.simulate('press')
   expect(i).toBe(1)
 })
