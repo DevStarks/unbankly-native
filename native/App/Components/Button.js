@@ -4,11 +4,9 @@ import { Text, TouchableOpacity } from 'react-native'
 import styles from './Styles/ButtonStyles'
 import ExamplesRegistry from '../Services/ExamplesRegistry'
 
-// Ignore in coverage report
-/* istanbul ignore next */
-ExamplesRegistry.addComponentExample('Drawer Button', () =>
+ExamplesRegistry.addComponentExample('Button', () =>
   <Button
-    text='Example left drawer button'
+    text='Example button'
     onPress={() => window.alert('Your button was pressed')}
   />
 )
@@ -16,13 +14,19 @@ ExamplesRegistry.addComponentExample('Drawer Button', () =>
 class Button extends Component {
   static propTypes = {
     text: PropTypes.string,
+    textStyle: PropTypes.obj,
     onPress: PropTypes.func
   }
 
   render () {
     return (
-      <TouchableOpacity style={[styles.button, this.props.style]} onPress={this.props.onPress}>
-        <Text style={styles.buttonText}>{this.props.text}</Text>
+      <TouchableOpacity
+        style={[styles.button, this.props.style]}
+        onPress={this.props.onPress}>
+
+        <Text style={[styles.buttonText, this.props.textStyle]}>
+          {this.props.text}
+        </Text>
       </TouchableOpacity>
     )
   }

@@ -3,6 +3,7 @@ const colors = {
   secondary: '#ECC925',
   tertiary: '#F2EFEB',
   textPrimary: '#637381',
+  dark: '#637381',
   border: '#E7E7E7',
   darkBorder: '#404041',
 

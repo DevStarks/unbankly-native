@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import { View, Image } from 'react-native'
 import { connect } from 'react-redux'
 import { Images } from '../Themes'
-
 import Text from '../Components/AppText'
 import ButtonInput from '../Components/ButtonInput'
-import Button from '../Components/Button'
+import SmallButton from '../Components/SmallButton'
 
 // Styles
 import styles from './Styles/NewLoanScreenStyles'
@@ -65,8 +64,8 @@ class NewLoanScreen extends Component {
         {this.renderContent()}
 
         <View style={styles.navigation}>
-          <Button style={styles.button} onPress={this.props.navigation.goBack} text='Back' />
-          <Button style={styles.button} onPress={this.navigateToNext} text='Next' />
+          <SmallButton style={[styles.button, styles.backButton]} onPress={this.props.navigation.goBack} text='Back' />
+          <SmallButton style={styles.button} onPress={this.navigateToNext} text='Next' />
         </View>
       </View>
     )

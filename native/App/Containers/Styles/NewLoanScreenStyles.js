@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { ApplicationStyles, Fonts, Metrics } from '../../Themes/'
+import { ApplicationStyles, Fonts, Metrics, Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   mainContainer: {
@@ -28,8 +28,10 @@ export default StyleSheet.create({
     justifyContent: 'space-between'
   },
   button: {
-    // paddingVertical: Metrics.baseMargin,
-    // paddingHorizontal: Metrics.doubleBaseMargin
     width: '35%'
+  },
+  backButton: {
+    backgroundColor: Colors.textPrimary,
+    
   }
 })

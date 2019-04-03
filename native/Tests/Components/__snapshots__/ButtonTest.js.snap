@@ -14,18 +14,21 @@ exports[`Button component renders correctly 1`] = `
     Object {
       "backgroundColor": "#A9CEC9",
       "opacity": 1,
+      "paddingVertical": 16,
     }
   }
 >
   <Text
     style={
-      Object {
-        "color": "#637381",
-        "fontFamily": "Oswald-Bold",
-        "fontSize": 20,
-        "marginVertical": 16,
-        "textAlign": "center",
-      }
+      Array [
+        Object {
+          "color": "#637381",
+          "fontFamily": "Oswald-Bold",
+          "fontSize": 20,
+          "textAlign": "center",
+        },
+        undefined,
+      ]
     }
   >
     hi

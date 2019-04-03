@@ -19,11 +19,17 @@ class AuthScreen extends Component {
       email: '',
       password: ''
     }
+
+    this.navigateToMainIfSignedIn()
   }
 
   componentDidUpdate () {
+    this.navigateToMainIfSignedIn()
+  }
+
+  navigateToMainIfSignedIn () {
     if (this.props.user) {
-      // this.props.navigation.navigate('LoanScreen')
+      this.props.navigation.replace('LoanScreen')
     }
   }
 

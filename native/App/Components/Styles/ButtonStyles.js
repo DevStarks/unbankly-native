@@ -3,11 +3,11 @@ import { Colors, Fonts, Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   button: {
-    backgroundColor: Colors.primary
+    backgroundColor: Colors.primary,
+    paddingVertical: Metrics.baseMargin
   },
 
   buttonText: {
-    marginVertical: Metrics.baseMargin,
     color: Colors.textPrimary,
     textAlign: 'center',
     fontSize: Fonts.size.regular,

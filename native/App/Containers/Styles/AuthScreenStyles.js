@@ -32,7 +32,7 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   emailInput: {
-    marginBottom: Metrics.baseMargin
+    marginBottom: Metrics.doubleBaseMargin
   },
   button: {
     marginTop: Metrics.baseMargin
