@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { ApplicationStyles, Fonts, Metrics, Colors } from '../../Themes/'
+import { ApplicationStyles, Fonts, Metrics } from '../../Themes/'
 
 export default StyleSheet.create({
   mainContainer: {
@@ -25,13 +25,11 @@ export default StyleSheet.create({
   navigation: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    position: 'absolute',
+    bottom: Metrics.doubleBaseMargin
   },
   button: {
     width: '35%'
-  },
-  backButton: {
-    backgroundColor: Colors.textPrimary,
-    
   }
 })

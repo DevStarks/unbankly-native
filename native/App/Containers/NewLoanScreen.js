@@ -5,6 +5,7 @@ import { Images } from '../Themes'
 import Text from '../Components/AppText'
 import ButtonInput from '../Components/ButtonInput'
 import SmallButton from '../Components/SmallButton'
+import DarkSmallButton from '../Components/DarkSmallButton'
 
 // Styles
 import styles from './Styles/NewLoanScreenStyles'
@@ -64,7 +65,7 @@ class NewLoanScreen extends Component {
         {this.renderContent()}
 
         <View style={styles.navigation}>
-          <SmallButton style={[styles.button, styles.backButton]} onPress={this.props.navigation.goBack} text='Back' />
+          <DarkSmallButton style={styles.button} onPress={this.props.navigation.goBack} text='Back' />
           <SmallButton style={styles.button} onPress={this.navigateToNext} text='Next' />
         </View>
       </View>

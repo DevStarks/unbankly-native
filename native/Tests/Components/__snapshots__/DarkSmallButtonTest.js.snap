@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DarkSmallButton component renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#637381",
+      "opacity": 1,
+      "paddingVertical": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#637381",
+          "fontFamily": "Oswald-Bold",
+          "fontSize": 20,
+          "textAlign": "center",
+        },
+        Object {
+          "color": "#F2EFEB",
+        },
+      ]
+    }
+  >
+    hi
+  </Text>
+</View>
+`;

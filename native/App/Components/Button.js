@@ -14,7 +14,7 @@ ExamplesRegistry.addComponentExample('Button', () =>
 class Button extends Component {
   static propTypes = {
     text: PropTypes.string,
-    textStyle: PropTypes.obj,
+    textStyle: PropTypes.object,
     onPress: PropTypes.func
   }
 
