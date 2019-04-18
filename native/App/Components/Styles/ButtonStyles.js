@@ -14,8 +14,7 @@ export default StyleSheet.create({
     fontFamily: Fonts.type.bold
   },
   disabled: {
-    opacity: 0.1,
+    opacity: 0.3,
     backgroundColor: '#fff'
-
   }
 })
