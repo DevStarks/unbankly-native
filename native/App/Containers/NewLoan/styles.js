@@ -31,5 +31,8 @@ export default StyleSheet.create({
   },
   button: {
     width: '35%'
+  },
+  bottomInput: {
+    marginTop: Metrics.baseMargin
   }
 })
