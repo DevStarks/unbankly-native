@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from './Styles/SmallButtonStyles'
 import ExamplesRegistry from '../Services/ExamplesRegistry'
 import Button from './Button'
@@ -10,13 +10,10 @@ ExamplesRegistry.addComponentExample('SmallButton', () =>
   />
 )
 
-class SmallButton extends Component {
-  // see Button for prop info
-  render () {
-    return (
-      <Button {...this.props} style={[styles.smallButton, this.props.style]} />
-    )
-  }
-}
+const SmallButton = React.memo((props) => {
+  return (
+    <Button {...props} style={[styles.smallButton, props.style]} />
+  )
+})
 
 export default SmallButton

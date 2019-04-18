@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, TouchableOpacity } from 'react-native'
-import Text from './AppText'
+import Text from './Text'
 import styles from './Styles/ButtonInputStyles'
 import ExamplesRegistry from '../Services/ExamplesRegistry'
 
@@ -14,6 +14,7 @@ class ButtonInput extends Component {
   // https://facebook.github.io/react-native/docs/textinput.html#props
 
   static propTypes = {
+    value: PropTypes.string,
     onSelect: PropTypes.func.isRequired,
     options: PropTypes.arrayOf(
       PropTypes.shape({
@@ -21,12 +22,6 @@ class ButtonInput extends Component {
         name: PropTypes.string
       })
     ).isRequired
-  }
-
-  constructor (props) {
-    super(props)
-
-    this.state = { selected: props.value }
   }
 
   onButtonPress (id) {
@@ -37,7 +32,7 @@ class ButtonInput extends Component {
   }
 
   renderButton (option, i) {
-    const selected = this.state.selected === option.id
+    const selected = this.props.value === option.id
     return (
       <TouchableOpacity
         key={i}

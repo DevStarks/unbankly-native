@@ -12,5 +12,10 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: Fonts.size.regular,
     fontFamily: Fonts.type.bold
+  },
+  disabled: {
+    opacity: 0.1,
+    backgroundColor: '#fff'
+
   }
 })

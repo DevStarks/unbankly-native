@@ -2,14 +2,14 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import LaunchScreen from '../Containers/LaunchScreen'
 import AuthScreen from '../Containers/AuthScreen'
 import LoanScreen from '../Containers/LoanScreen'
-import NewLoanScreen from '../Containers/NewLoanScreen'
+import { RoleScreen } from '../Containers/NewLoan'
 
 import { FluidNavigator } from 'react-navigation-fluid-transitions'
 
 import styles from './Styles/NavigationStyles'
 
 const NewLoanNav = FluidNavigator({
-  RoleScreen: { screen: NewLoanScreen }
+  RoleScreen: { screen: RoleScreen }
 }, {
   headerMode: 'none',
   initialRouteName: 'RoleScreen'

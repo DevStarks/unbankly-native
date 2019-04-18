@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Text, TouchableOpacity } from 'react-native'
 import styles from './Styles/ButtonStyles'
@@ -11,25 +11,27 @@ ExamplesRegistry.addComponentExample('Button', () =>
   />
 )
 
-class Button extends Component {
-  static propTypes = {
-    text: PropTypes.string,
-    textStyle: PropTypes.object,
-    onPress: PropTypes.func
-  }
+const Button = React.memo((props) => {
+  console.log(props);
+  return (
+    <TouchableOpacity
+      disabled={props.disabled}
+      activeOpacity={props.disabled ? 1 : 0.2}
+      style={[props.disabled && styles.disabled, styles.button, props.style]}
+      onPress={props.onPress}>
 
-  render () {
-    return (
-      <TouchableOpacity
-        style={[styles.button, this.props.style]}
-        onPress={this.props.onPress}>
+      <Text style={[styles.buttonText, props.textStyle]}>
+        {props.text}
+      </Text>
+    </TouchableOpacity>
+  )
+})
 
-        <Text style={[styles.buttonText, this.props.textStyle]}>
-          {this.props.text}
-        </Text>
-      </TouchableOpacity>
-    )
-  }
+Button.propTypes = {
+  text: PropTypes.string,
+  textStyle: PropTypes.object,
+  onPress: PropTypes.func,
+  disabled: PropTypes.bool
 }
 
 export default Button

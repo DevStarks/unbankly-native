@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Image, View } from 'react-native'
 import { connect } from 'react-redux'
 import Button from '../Components/Button'
-import Text from '../Components/AppText'
+import Text from '../Components/Text'
 import TextInput from '../Components/TextInput'
 import Link from '../Components/Link'
 import { Images } from '../Themes'
@@ -28,7 +28,7 @@ class AuthScreen extends Component {
   }
 
   navigateToMainIfSignedIn () {
-    if (this.props.user) {
+    if (true || this.props.user) {
       this.props.navigation.replace('LoanScreen')
     }
   }
