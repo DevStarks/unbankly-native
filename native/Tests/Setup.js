@@ -24,3 +24,8 @@ jest
     }
   }
 })
+.mock('react', () => {
+  const r = jest.requireActual('react')
+  // allow React.memo components to be supported by enzyme
+  return { ...r, memo: (x) => x }
+})
