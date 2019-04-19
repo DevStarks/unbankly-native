@@ -2,7 +2,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import LaunchScreen from '../Containers/LaunchScreen'
 import AuthScreen from '../Containers/AuthScreen'
 import LoanScreen from '../Containers/LoanScreen'
-import { RoleScreen, PartnerScreen } from '../Containers/NewLoan'
+import { RoleScreen, PartnerScreen, AmountScreen } from '../Containers/NewLoan'
 
 import { FluidNavigator } from 'react-navigation-fluid-transitions'
 
@@ -10,10 +10,11 @@ import styles from './Styles/NavigationStyles'
 
 const NewLoanNav = FluidNavigator({
   RoleScreen: { screen: RoleScreen },
-  PartnerScreen: { screen: PartnerScreen }
+  PartnerScreen: { screen: PartnerScreen },
+  AmountScreen: { screen: AmountScreen }
 }, {
   headerMode: 'none',
-  initialRouteName: 'RoleScreen'
+  initialRouteName: 'AmountScreen'
 })
 
 // Manifest of possible screens

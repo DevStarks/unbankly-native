@@ -8,7 +8,7 @@ import ExamplesRegistry from '../Services/ExamplesRegistry'
 /* istanbul ignore next */
 
 ExamplesRegistry.addComponentExample('TextInput', () =>
-  <AppTextInput>This is text</AppTextInput>
+  <AppTextInput placeholder='This is text input' />
 )
 
 class AppTextInput extends Component {

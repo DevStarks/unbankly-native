@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoneyInput component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "height": 60,
+      },
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholder="$1.00"
+    style={
+      Object {
+        "borderColor": "#E7E7E7",
+        "borderWidth": 1,
+        "color": "#637381",
+        "fontFamily": "AmaticSC-Bold",
+        "fontSize": 20,
+        "height": 60,
+        "paddingBottom": 16,
+        "paddingLeft": 5,
+        "paddingTop": 16,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ECC925",
+        "bottom": 4,
+        "height": 1,
+      }
+    }
+  />
+</View>
+`;

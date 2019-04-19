@@ -12,7 +12,6 @@ ExamplesRegistry.addComponentExample('Button', () =>
 )
 
 const Button = React.memo((props) => {
-  console.log(props);
   return (
     <TouchableOpacity
       disabled={props.disabled}
